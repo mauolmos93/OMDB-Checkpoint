@@ -1,0 +1,17 @@
+.users{
+  color: white;
+  font-size: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.users h4, ul{
+  margin: 0;
+  padding: 0;
+}
+
+.users a{
+  color: rgb(148, 148, 148);
+}

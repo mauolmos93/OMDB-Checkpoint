@@ -1,0 +1,30 @@
+@import "./Vars.scss";
+@import "./Media.scss"; // -> Este es el archivo que contiene los media query's
+
+html {
+  font-size: 62.5%;
+  /*1 rem = 10px*/
+}
+
+body {
+  margin: 0;
+  font-family: $theme-font;
+  background: $main-color;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}

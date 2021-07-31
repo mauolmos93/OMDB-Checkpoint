@@ -1,0 +1,43 @@
+@import "../Vars.scss";
+
+.carousel {
+  overflow: scroll;
+  padding-left: 30px;
+  width: 100%;
+  position: relative;
+  height: 80vh;
+}
+
+.carousel__container {
+  transition: 450ms -webkit-transform;
+  transition: 450ms transform;
+  transition: 450ms transform, 450ms -webkit-transform;
+  font-size: 0;
+  white-space: nowrap;
+  margin-top: 7rem;
+  padding-bottom: 10px;
+}
+
+.carousel__container:hover .carousel-item {
+  opacity: 0.3;
+}
+
+.carousel__container:hover .carousel-item:hover {
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+  opacity: 1;
+}
+
+.carousel__title {
+  background: $main-color;
+  color: white;
+  font-size: 16px;
+  padding-left: 30px;
+  width: 100%;
+  position: fixed;
+}
+
+
+.carousel__title a{
+  color: rgb(146, 146, 146);
+}

@@ -1,0 +1,74 @@
+@import "../Vars.scss";
+
+.header {
+  align-items: center;
+  background: $main-color;
+  color: white;
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  top: 0px;
+  width: 100%;
+}
+
+.header a{
+  font-size: 1.6rem;
+}
+
+.header__users{
+  color: white;
+  font-size: 3rem;
+  transform: translate(-120%, 0px);
+}
+
+.header__img {
+  margin-left: 30px;
+  width: 200px;
+}
+
+.header__menu {
+  margin-right: 30px;
+}
+
+.header__menu ul {
+  display: none;
+  list-style: none;
+  margin: 0px 0px 0px -14px;
+  padding: 0px;
+  position: absolute;
+  width: 100px;
+  text-align: right;
+  z-index: 10;
+}
+
+.header__menu:hover ul,
+ul:hover {
+  display: block;
+}
+
+.header__menu li {
+  margin: 10px 0px;
+}
+
+.header__menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.header__menu li a:hover {
+  text-decoration: underline;
+}
+
+.header__menu--profile {
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+.header__menu--profile img {
+  margin-right: 8px;
+  width: 40px;
+  border-radius: 100%;
+  object-fit: cover; //investigar pa que sirve esta propiedá
+}
